@@ -20,7 +20,8 @@ public class RatingController {
 
     @GetMapping("/user/{userId}")
     public UserRatings getUserRatings(@PathVariable("userId") final String userId) {
-        List<Rating> ratings = List.of(new Rating("a", 4), new Rating("b", 5));
+        List<Rating> ratings = List.of(new Rating("550", 4), new Rating("551", 5),
+                new Rating("552", 3));
         return new UserRatings(ratings);
     }
 }
